@@ -5,5 +5,7 @@ steps:
   - '-c'
   - |
     gcloud components install kubectl
-    gcloud container clusters get-credentials  --project="kube-259906" standard-cluster-1 --region us-central1
+    gcloud container clusters get-credentials  --project $PROJECT_ID standard-cluster-1 --region us-central1
+#    gcloud container clusters get-credentials  --project="kube-259906" standard-cluster-1 --region us-central1
     kubectl get nodes
+  
