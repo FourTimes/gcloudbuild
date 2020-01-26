@@ -6,4 +6,4 @@ steps:
   - |
     gcloud components install kubectl
     gcloud container clusters get-credentials  --project=$PROJECT_ID jino --region us-east1
-    kubectl get nodes
+    kubectl get all 
